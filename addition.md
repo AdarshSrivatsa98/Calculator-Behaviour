@@ -88,7 +88,7 @@ And I press "equals"
 
 Then: I see the c"Reached Maximum limit" as the result
 
-## Scenario: 6+* is provided as input?
+## Scenario: 6+* is provided as input
 
 Given:  The calculator is turned on
 
