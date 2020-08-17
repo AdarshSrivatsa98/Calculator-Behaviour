@@ -83,7 +83,7 @@ Given:  The calculator is turned on
 
 When: I type in "Any number"
 And I press "plus"
-And I type "Any number" 
+And I type "Any number"
 And I press "equals"
 
 Then: I see the c"Reached Maximum limit" as the result
@@ -94,7 +94,7 @@ Given:  The calculator is turned on
 
 When: I type in "Any number"
 And I press "plus" along with invalid input
-And I type "Any number" 
+And I type "Any number"
 And I press "equals"
 
 Then: I see the "Syntax Error" as the result
@@ -105,7 +105,7 @@ Given:  The calculator is turned on
 
 When: I type in "Any number"
 And I press "plus"
-And I type "Zero" 
+And I type "Zero"
 And I press "equals"
 
 Then: I see the "return same number" as the result
@@ -116,7 +116,7 @@ Given:  The calculator is turned on
 
 When: I type in "Any number"
 And I press "plus"
-And I type "Any number" 
+And I type "Any number"
 And I press "equals"
 And I repeat plus(Right,Left)
 
