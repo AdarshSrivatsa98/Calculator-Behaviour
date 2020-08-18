@@ -4,9 +4,9 @@
 
 Given:  The calculator is turned on
 
-When: I type in "positive number"
-And I press "plus"
-And I type in "positive number"
+When: I type in "positive number"  
+And I press "plus"  
+And I type in "positive number"  
 And I press "equals"
 
 Then: I see the "added number" as the result
@@ -15,9 +15,9 @@ Then: I see the "added number" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "negative number"
-And I press "plus"
-And I type in "negative number"
+When: I type in "negative number"  
+And I press "plus"  
+And I type in "negative number"  
 And I press "equals"
 
 Then: I see the "added number with negative sign" as the result
@@ -26,9 +26,9 @@ Then: I see the "added number with negative sign" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Integer or Fraction number"
-And I press "plus"
-And I type in "AtleastOne(Fraction) or Integer number"
+When: I type in "Integer or Fraction number"  
+And I press "plus"  
+And I type in "Atleast One fraction or Integer number"  
 And I press "equals"
 
 Then: I see the "Fraction or Integer resulted from addition" as the result
@@ -37,9 +37,9 @@ Then: I see the "Fraction or Integer resulted from addition" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "positive/negative number"
-And I press "plus"
-And I type in "negative/positive number"
+When: I type in "positive/negative number"  
+And I press "plus"  
+And I type in "negative/positive number"  
 And I press "equals"
 
 Then: I see the "difference of numbers with sign of resultant number" as the result
@@ -48,9 +48,9 @@ Then: I see the "difference of numbers with sign of resultant number" as the res
 
 Given:  The calculator is turned on
 
-When: I type in "Integer/Decimal number"
-And I press "plus"
-And I type in "AtleastOne(Decimal) or Integer number"
+When: I type in "Integer/Decimal number"  
+And I press "plus"  
+And I type in "Atleast One Decimal or Integer number"  
 And I press "equals"
 
 Then: I see the "Decimal or Integer resulted from addition" as the result
@@ -59,9 +59,9 @@ Then: I see the "Decimal or Integer resulted from addition" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Any number"
-And I press " plus (More than once)"
-And I type in "Any number"
+When: I type in "Any number"  
+And I press " plus (More than once)"  
+And I type in "Any number"  
 And I press "equals"
 
 Then: I see the "Syntax Error" as the result
@@ -70,9 +70,9 @@ Then: I see the "Syntax Error" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Any number"
-And I press "plus" between operands
-And I type "Any number"
+When: I type in "Any number"  
+And I press "plus" between operands  
+And I type "Any number"  
 And I press "equals"
 
 Then: I see the "added number" as the result
@@ -81,9 +81,9 @@ Then: I see the "added number" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Any number"
-And I press "plus"
-And I type "Any number"
+When: I type in "Any number"  
+And I press "plus"  
+And I type "Any number"  
 And I press "equals"
 
 Then: I see the c"Reached Maximum limit" as the result
@@ -92,9 +92,9 @@ Then: I see the c"Reached Maximum limit" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Any number"
-And I press "plus" along with invalid input
-And I type "Any number"
+When: I type in "Any number"  
+And I press "plus" along with invalid input  
+And I type "Any number"  
 And I press "equals"
 
 Then: I see the "Syntax Error" as the result
@@ -103,9 +103,9 @@ Then: I see the "Syntax Error" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Any number"
-And I press "plus"
-And I type "Zero"
+When: I type in "Any number"  
+And I press "plus"  
+And I type "Zero"  
 And I press "equals"
 
 Then: I see the "return same number" as the result
@@ -114,10 +114,10 @@ Then: I see the "return same number" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Any number"
-And I press "plus"
-And I type "Any number"
-And I press "equals"
+When: I type in "Any number"  
+And I press "plus"  
+And I type "Any number"  
+And I press "equals"  
 And I repeat plus(Right,Left)
 
 Then: I see the same result
