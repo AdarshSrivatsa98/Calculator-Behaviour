@@ -2,7 +2,7 @@
 
 This project works out five features of a calculator:
 
-1. Addition
+1. Subtraction
 1. Multiplication
 1. Division
 1. Subtraction
