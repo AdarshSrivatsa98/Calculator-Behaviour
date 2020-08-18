@@ -110,7 +110,7 @@ And I press "equals"
 
 Then: I see the "Quotient" as the result
 
-## Scenario: Division of multiple numbers (eg: 4/5/6/7)
+## Scenario: Division of multiple numbers  
 
 Given:  The calculator is turned on
 
