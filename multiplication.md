@@ -115,7 +115,7 @@ Then: I see the "solution" as the result
 
 Given:  The calculator is turned on
 
-When: I type in "Complex muber"  
+When: I type in "Complex number"  
 And I press "multiply"  
 And I type in "Complex number"  
 And I press "equals"
