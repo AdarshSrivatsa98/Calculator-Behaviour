@@ -65,7 +65,7 @@ And I type in "Any number"
 And I repeat addition operation  
 And I press "equals"
 
-Then: I see the "Perform operation only once" as the result
+Then: I see the "Perform operation once" as the result
 
 ## Scenario: addition of more than 2 numbers
 

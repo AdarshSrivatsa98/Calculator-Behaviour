@@ -142,7 +142,7 @@ And I press "multiply" (More than once)
 And I type in "positive number"  
 And I press "equals"
 
-Then: I see the "Solution performing operation only once" as the result
+Then: I see the "Solution performing operation once" as the result
 
 ## Scenario: Interleaving operators (Press *, then press /, then press +)
 

@@ -76,7 +76,7 @@ And I press "divide" (More than once)
 And I type in "positive number"  
 And I press "equals"
 
-Then: I see the "Quotient with existing operands only once" as the result
+Then: I see the "Quotient with existing operands once" as the result
 
 ## Scenario: Interleaving of different operator
 

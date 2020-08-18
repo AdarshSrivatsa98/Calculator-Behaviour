@@ -64,7 +64,7 @@ And I press " minus" (More than once)
 And I type in "Any number"  
 And I press "equals"
 
-Then: I see the "Perform operation only once" as the result
+Then: I see the "Perform operation once" as the result
 
 ## Scenario: Subtraction of more than 2 numbers
 
