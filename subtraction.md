@@ -20,7 +20,7 @@ And I press "minus"
 And I type in "negative number"  
 And I press "equals"
 
-Then: I see the "added number with negative sign" as the result
+Then: I see the "subtracted number" as the result
 
 ## Scenario: Subtraction of fractions
 
@@ -60,11 +60,11 @@ Then: I see the "Decimal or Integer resulted from Subtraction" as the result
 Given:  The calculator is in on state
 
 When: I type in "Any number"  
-And I press " minus (More than once)"  
+And I press " minus" (More than once)  
 And I type in "Any number"  
 And I press "equals"
 
-Then: I see the "Syntax Error" as the result
+Then: I see the "Perform operation only once" as the result
 
 ## Scenario: Subtraction of more than 2 numbers
 
@@ -73,11 +73,12 @@ Given:  The calculator is in on state
 When: I type in "Any number"  
 And I press "minus" between operands  
 And I type "Any number"  
+And I repeat subtraction operation  
 And I press "equals"
 
 Then: I see the "added number" as the result
 
-## Scenario: Adding numbers where the result goes out of range
+## Scenario: Subtracting numbers where the result goes out of range
 
 Given:  The calculator is in on state
 
@@ -110,14 +111,14 @@ And I press "equals"
 
 Then: I see the "return same number" as the result
 
-## Scenario: Converse operation
+## Scenario: Subtraction isn't symmetric
 
 Given:  The calculator is in on state
 
 When: I type in "Any number"  
 And I press "minus"  
-And I type "Any number"  
-And I press "equals"  
+And I type in "Any number"  
+And I press "equals"
 And I repeat minus(Right,Left)
 
-Then: I see the same result
+Then: I see the different result

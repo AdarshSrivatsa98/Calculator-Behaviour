@@ -20,7 +20,7 @@ And I press "multiply"
 And I type in "A number with opposite sign"  
 And I press "equals"
 
-Then: I see the "solution" as the result
+Then: I see the "Solution with negative sign" as the result
 
 ## Scenario: Zero value multiplication
 
@@ -53,7 +53,7 @@ And I press "multiply"
 And I type in "Number with decimal values"  
 And I press "equals"
 
-Then: I see the "solution with decimal values" as the result
+Then: I see the "Solution with decimal values" as the result
 
 ## Scenario: Irrational value multiplication
 
@@ -75,7 +75,7 @@ And I press "multiply"
 And I type in "Any number"  
 And I press "equals"
 
-Then: I see the "solution" as the result
+Then: I see the "Solution" as the result
 
 ## Scenario: Rational multiplication
 
@@ -86,7 +86,7 @@ And I press "multiply"
 And I type in "Any number"  
 And I press "equals"
 
-Then: I see the "solution" as the result
+Then: I see the "Solution" as the result
 
 ## Scenario: Decimal & integer multiplication
 
@@ -97,7 +97,7 @@ And I press "multiply"
 And I type in "Any number"  
 And I press "equals"
 
-Then: I see the "solution" as the result
+Then: I see the "Solution with decimal values" as the result
 
 ## Scenario: More than two numbers multiplication
 
@@ -106,10 +106,10 @@ Given:  The calculator is in on state
 When: I type in "Any number"  
 And I press "multiply"  
 And I type in "Any number"  
+And I repeat multiplication operation  
 And I press "equals"  
-And I repeat operation with multiple operand
 
-Then: I see the "solution" as the result
+Then: I see the "Solution" as the result
 
 ## Scenario: Complex number multiplication
 
@@ -120,7 +120,7 @@ And I press "multiply"
 And I type in "Complex number"  
 And I press "equals"
 
-Then: I see the "solution along with complex parts" as the result
+Then: I see the "Solution along with complex parts" as the result
 
 ## Scenario: Range of operand exceeds allowed limit
 
@@ -131,9 +131,9 @@ And I press "multiply"
 And I type in "Any number exceeding limit"  
 And I press "equals"
 
-Then: I see the "solution with arrested figures" as the result
+Then: I see the "Solution with arrested input figures" as the result
 
-## Scenario: Pressing "multiply button" multiple time
+## Scenario: Pressing "multiply button" more than once
 
 Given:  The calculator is in on state
 
@@ -142,7 +142,7 @@ And I press "multiply" (More than once)
 And I type in "positive number"  
 And I press "equals"
 
-Then: I see the "solution discarding excessive operator" as the result
+Then: I see the "Solution performing operation only once" as the result
 
 ## Scenario: Interleaving operators (Press *, then press /, then press +)
 
@@ -153,7 +153,7 @@ And I press "multiply"(Followed by other operator)
 And I type in "positive number"  
 And I press "equals"
 
-Then: I see the "solution of recent operator" as the result
+Then: I see the "Solution of recent operator" as the result
 
 ## Scenario: Decimal value capping
 
@@ -164,4 +164,4 @@ And I press "multiply"
 And I type in "Decimal value exceeding limit"  
 And I press "equals"
 
-Then: I see the "solution" as the result
+Then: I see the "Solution with arrested input decimal figures" as the result

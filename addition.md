@@ -62,9 +62,10 @@ Given:  The calculator is in on state
 When: I type in "Any number"  
 And I press " plus (More than once)"  
 And I type in "Any number"  
+And I repeat addition operation  
 And I press "equals"
 
-Then: I see the "Syntax Error" as the result
+Then: I see the "Perform operation only once" as the result
 
 ## Scenario: addition of more than 2 numbers
 
@@ -74,6 +75,7 @@ When: I type in "Any number"
 And I press "plus" between operands  
 And I type "Any number"  
 And I press "equals"
+And I repeat addition operation
 
 Then: I see the "added number" as the result
 
@@ -97,9 +99,9 @@ And I press "plus" along with invalid input
 And I type "Any number"  
 And I press "equals"
 
-Then: I see the "Syntax Error" as the result
+Then: I see the "Result of recent operator" as the result
 
-## Scenario: Identify operation
+## Scenario: Identity operation
 
 Given:  The calculator is in on state
 

@@ -1,26 +1,26 @@
 # Division
 
-## Scenario: Division by 0 when operand 1 is any number
+## Scenario: Division by 0 when first operand is any number
 
 Given:  The calculator is in on state
 
 When: I type in "positive number"  
 And I press "divide"  
-And I type in "positive number"  
+And I type in "Zero"  
 And I press "equals"
 
-Then: I see the "Quotient" as the result
+Then: I see the "Divide by zero error" as the result
 
 ## Scenario: Divide 0 by any number
 
 Given:  The calculator is in on state
 
-When: I type in "positive number"  
+When: I type in "Zero"  
 And I press "divide"  
-And I type in "zero"  
+And I type in "Any number"  
 And I press "equals"
 
-Then: I see the "Quotient" as the result
+Then: I see the "Zero" as the result
 
 ## Scenario: Sign rules for operands
 
@@ -31,7 +31,7 @@ And I press "divide"
 And I type in "opposite signed number"  
 And I press "equals"
 
-Then: I see the "Quotient" as the result
+Then: I see the "Quotient with negative sign" as the result
 
 ## Scenario: Division isn't symmetric
 
@@ -43,7 +43,7 @@ And I type in "Any number except zero"
 And I press "equals"
 And I repeat divide(Right,Left)
 
-Then: I see the same result
+Then: I see the different result
 
 ## Scenario: Division when both operands are 0
 
@@ -54,7 +54,7 @@ And I press "divide"
 And I type in "Zero"  
 And I press "equals"
 
-Then: I see the zero by zero error as the result
+Then: I see the "zero by zero error" as the result
 
 ## Scenario: Recurring decimal case
 
@@ -67,7 +67,7 @@ And I press "equals"
 
 Then: I see the "Quotient with certain figures" as the result
 
-## Scenario: Multiple "/" as input
+## Scenario: More than one "/" as input
 
 Given:  The calculator is in on state
 
@@ -76,7 +76,7 @@ And I press "divide" (More than once)
 And I type in "positive number"  
 And I press "equals"
 
-Then: I see the "Quotient with existing operands" as the result
+Then: I see the "Quotient with existing operands only once" as the result
 
 ## Scenario: Interleaving of different operator
 
@@ -108,9 +108,9 @@ And I press "divide"
 And I type in "Fraction or Any number"  
 And I press "equals"
 
-Then: I see the "Quotient" as the result
+Then: I see the "Quotient with fraction" as the result
 
-## Scenario: Division of multiple numbers  
+## Scenario: Division of more than two numbers  
 
 Given:  The calculator is in on state
 
